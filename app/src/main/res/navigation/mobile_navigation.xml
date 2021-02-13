@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.onlineexanapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+<!--        <action-->
+<!--            android:id="@+id/action_nav_home_to_onlineExamFragment3"-->
+<!--            app:destination="@id/onlineExamFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.onlineexanapp.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_password"
+        android:name="com.example.onlineexanapp.ui.changepassword.ChangePasswordFragment"
+        android:label="@string/menu_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/nav_UpdateProfile"
+        android:name="com.example.onlineexanapp.ui.updateprofile.UpdateProfile"
+        android:label="@string/menu_Update_profile"
+        tools:layout="@layout/fragment_update_profile" />
+<!--    <fragment-->
+<!--        android:id="@+id/onlineExamFragment"-->
+<!--        android:name="com.example.onlineexanapp.ui.exam.OnlineExamFragment"-->
+<!--        android:label="OnlineExamFragment"-->
+<!--        tools:layout="@layout/fragment_online_exam">-->
+<!--        <action-->
+<!--            android:id="@+id/action_onlineExamFragment_to_detailFragment2"-->
+<!--            app:destination="@id/detailFragment" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_onlineExamFragment_to_nav_home2"-->
+<!--            app:destination="@id/nav_home" />-->
+<!--        <argument-->
+<!--            android:name="detailArg"-->
+<!--            app:argType="com.example.onlineexanapp.ui.exam.Courses" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/detailFragment"-->
+<!--        android:name="com.example.onlineexanapp.ui.exam.DetailFragment"-->
+<!--        android:label="fragment_detail"-->
+<!--        tools:layout="@layout/fragment_detail" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_detailFragment_to_onlineExamFragment2"-->
+<!--            app:destination="@id/onlineExamFragment" />-->
+<!--    </fragment>-->
+
+</navigation>
